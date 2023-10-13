@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import imageBanner from "./assets/image1.jpg";
 import imageBannerMobile from "./assets/image1Mobile.jpg";
+import MainButton from "../main-button/MainButton";
 
 const Banner = () => {
   return (
@@ -15,9 +16,7 @@ const Banner = () => {
             reprehenderit, assumenda sed impedit id quis sapiente itaque saepe
             perferendis maiores explicabo ad vero tempore?
           </p>
-          <a href="#" className="btn">
-            Saber más
-          </a>
+          <MainButton></MainButton>
         </div>
       </div>
     </Container>
