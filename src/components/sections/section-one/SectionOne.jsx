@@ -14,11 +14,11 @@ const SectionOne = () => {
 export default SectionOne;
 
 const Section = styled.section`
-  margin: 8rem 0;
+  margin: 6rem 0;
 
   h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
   }
 

@@ -13,8 +13,8 @@ export default MainButton;
 const Button = styled.button`
   display: inline-block;
   font-weight: 600;
-  width: 150px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   margin: 1rem;
   border-radius: 40px;
   border: 1px solid #999;
@@ -60,7 +60,7 @@ const Button = styled.button`
 
   & span {
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease-in;
   }
 `;

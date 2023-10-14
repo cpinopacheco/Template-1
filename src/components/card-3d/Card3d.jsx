@@ -35,11 +35,17 @@ const Container = styled.div`
 
   .card {
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 500px;
-    margin: 40px 20px;
+    margin: 30px;
     transform-style: preserve-3d;
     perspective: 1000px;
+  }
+
+  @media (min-width: 1600px) {
+    .card {
+      margin: 30px 60px;
+    }
   }
 
   .seeMoreButton {
@@ -55,14 +61,6 @@ const Container = styled.div`
   @media (min-width: 992px) {
     .seeMoreButton {
       display: none;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .card {
-      width: 400px;
-      height: 600px;
-      margin: 50px;
     }
   }
 

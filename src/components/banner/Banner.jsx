@@ -79,10 +79,6 @@ const Container = styled.div`
   .banner .content h2 {
     color: var(--text-color);
     font-size: 3rem;
-
-    @media (min-width: 992px) {
-      font-size: 5rem;
-    }
   }
 
   .banner .content p {
