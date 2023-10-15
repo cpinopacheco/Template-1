@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import Card3d from "../../card-3d/Card3d";
+import MyCompany from "../../../data/MyCompany.js";
 
 const SectionOne = () => {
+  const { name } = MyCompany;
+
   return (
     <Section>
-      <h2>Titulo de sección</h2>
-      <div className="containerCard"></div>
+      <h2 className="title">Acerca de {name}</h2>
       <Card3d></Card3d>
     </Section>
   );
@@ -14,25 +16,17 @@ const SectionOne = () => {
 export default SectionOne;
 
 const Section = styled.section`
-  margin: 6rem 0;
+  margin: 6rem 0.5rem;
 
-  h2 {
+  .title {
     text-align: center;
-    font-size: 2.5rem;
-    color: #fff;
+    font-size: var(--title-size);
+    color: var(--text-color);
   }
 
   @media (min-width: 992px) {
-    h2 {
-      font-size: 4rem;
+    .title {
+      font-size: var(--title-size-lg);
     }
-  }
-
-  .containerCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    transform-style: preserve-3d;
   }
 `;

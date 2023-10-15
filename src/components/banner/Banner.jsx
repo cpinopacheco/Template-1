@@ -78,11 +78,17 @@ const Container = styled.div`
 
   .banner .content h2 {
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: var(--title-size);
+  }
+
+  @media (min-width: 992px) {
+    .banner .content h2 {
+      font-size: var(--title-size-lg);
+    }
   }
 
   .banner .content p {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: var(--subtitle-size);
   }
 `;

@@ -20,12 +20,13 @@ const Menu = () => {
           </li>
           <li className="listItem">
             <a href="#" className="link" onClick={handleClick}>
-              Productos
+              Nosotros
             </a>
           </li>
+
           <li className="listItem">
             <a href="#" className="link" onClick={handleClick}>
-              Nosotros
+              Catálogo
             </a>
           </li>
           <li className="listItem">
@@ -57,7 +58,7 @@ const Navigation = styled.div`
 
   &.active {
     width: 100%;
-    height: 360px;
+    height: 390px;
     transition: width 0.5s, height 0.5s;
     transition-delay: 0s, 0.5s;
 

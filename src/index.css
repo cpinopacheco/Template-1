@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
+  --primary-color: #e6e349;
   --text-color: #fff;
+  --title-size: 2.5rem;
+  --title-size-lg: 3rem;
+  --subtitle-size: 1.2rem;
 }
 
 body {

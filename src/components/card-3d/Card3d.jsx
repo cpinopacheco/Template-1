@@ -35,15 +35,23 @@ const Container = styled.div`
 
   .card {
     position: relative;
-    width: 350px;
-    height: 500px;
-    margin: 30px;
+    width: 300px;
+    height: 450px;
+    margin: 30px 0;
     transform-style: preserve-3d;
     perspective: 1000px;
   }
 
+  @media (min-width: 576px) {
+    .card {
+      margin: 30px 50px;
+    }
+  }
+
   @media (min-width: 1600px) {
     .card {
+      width: 350px;
+      height: 500px;
       margin: 30px 60px;
     }
   }
@@ -56,6 +64,8 @@ const Container = styled.div`
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 
   @media (min-width: 992px) {
@@ -93,6 +103,7 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
   }
 
   .contentBx {
@@ -107,6 +118,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    border-radius: 1rem;
     transform: rotateY(180deg);
   }
 
@@ -115,6 +127,7 @@ const Container = styled.div`
     padding: 20px;
     background: #999;
     transform: translateZ(100px);
+    border-radius: 1rem;
   }
 
   .contentBx div h2 {

@@ -46,13 +46,13 @@ const Container = styled.div`
   .title {
     position: absolute;
     text-align: center;
-    font-size: 3rem;
-    color: #fff;
+    font-size: var(--title-size);
+    color: var(--text-color);
   }
 
   @media (min-width: 992px) {
     .title {
-      font-size: 4rem;
+      font-size: var(--title-size-lg);
     }
   }
 
