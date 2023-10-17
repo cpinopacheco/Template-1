@@ -16,7 +16,7 @@ const SectionOne = () => {
 export default SectionOne;
 
 const Section = styled.section`
-  margin: 6rem 0.5rem;
+  margin: 6rem 1rem;
 
   .title {
     text-align: center;
