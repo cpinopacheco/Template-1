@@ -21,6 +21,7 @@ const SectionTwo = () => {
 
   useEffect(() => {
     setTotalItems(filteredCatalogue.length);
+    setCurrentPage(1);
   }, [filteredCatalogue.length]);
 
   const handlePageChange = (newPage) => {
@@ -35,7 +36,10 @@ const SectionTwo = () => {
       const offset = 30; // Ajusta el valor del offset según tus necesidades
       const targetElement = cardsContainerRef.current;
       targetElement.style.marginTop = `-${offset}px`; // Aplicar un margen superior negativo
-      targetElement.scrollIntoView({ block: "start" });
+      targetElement.scrollIntoView({
+        block: "start" /* behavior: "smooth"  */,
+      }); //se puede agregar behavior: "smooth"
+
       // Restablecer el margen superior
       targetElement.style.marginTop = "0";
     }
@@ -51,9 +55,12 @@ const SectionTwo = () => {
           filteredCatalogue.length === 0 ? (
             <Alert message="No encontramos lo que buscas" />
           ) : (
-            filteredCatalogue.map((item) => (
-              <SaleCard key={item.id} item={item}></SaleCard>
-            ))
+            filteredCatalogue
+              .slice(
+                (currentPage - 1) * itemsPerPage,
+                currentPage * itemsPerPage
+              )
+              .map((item) => <SaleCard key={item.id} item={item}></SaleCard>)
           )
         ) : (
           filteredCatalogue
