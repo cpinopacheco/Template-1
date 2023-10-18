@@ -59,7 +59,7 @@ const Container = styled.div`
   .seeMoreButton {
     position: absolute;
     bottom: 0;
-    background-color: #999;
+    background-color: var(--tertiary-color);
     width: 100%;
     color: #fff;
     padding: 1rem 0;
@@ -112,7 +112,7 @@ const Container = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: #333;
+    background: var(--secondary-color);
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@ const Container = styled.div`
   .box .contentBx div {
     transform-style: preserve-3d;
     padding: 20px;
-    background: #999;
+    background: var(--tertiary-color);
     transform: translateZ(100px);
     border-radius: 1rem;
   }

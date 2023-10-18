@@ -17,7 +17,7 @@ const Button = styled.button`
   height: 40px;
   margin: 1rem;
   border-radius: 40px;
-  border: 1px solid #999;
+  border: 1px solid var(--tertiary-color);
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in;
@@ -39,13 +39,13 @@ const Button = styled.button`
   }
 
   &::before {
-    left: -10px;
-    background: #333;
+    left: -9px;
+    background: var(--secondary-color);
   }
 
   &::after {
-    right: -10px;
-    background: #999;
+    right: -9px;
+    background: var(--tertiary-color);
   }
 
   &:hover::before,
@@ -59,7 +59,7 @@ const Button = styled.button`
   }
 
   & span {
-    color: #333;
+    color: var(--secondary-color);
     font-size: 1.1rem;
     transition: all 0.3s ease-in;
   }

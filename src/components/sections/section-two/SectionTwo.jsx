@@ -14,9 +14,17 @@ const SectionTwo = () => {
   const itemsPerPage = 6;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
+  // Función para eliminar tildes y caracteres especiales
+  const removeAccents = (str) => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  };
+
   // Filtrar el catálogo en función del texto de búsqueda
   const filteredCatalogue = catalogue.filter((item) =>
-    item.name.toLowerCase().includes(searchText.toLowerCase())
+    removeAccents(item.name).includes(removeAccents(searchText))
   );
 
   useEffect(() => {
@@ -37,8 +45,8 @@ const SectionTwo = () => {
       const targetElement = cardsContainerRef.current;
       targetElement.style.marginTop = `-${offset}px`; // Aplicar un margen superior negativo
       targetElement.scrollIntoView({
-        block: "start" /* behavior: "smooth"  */,
-      }); //se puede agregar behavior: "smooth"
+        block: "start",
+      });
 
       // Restablecer el margen superior
       targetElement.style.marginTop = "0";

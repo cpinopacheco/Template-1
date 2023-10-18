@@ -11,10 +11,12 @@ const Menu = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
 
+    console.log(section);
+
     if (section) {
       const offset = 30;
       section.style.marginTop = `-${offset}px`;
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.scrollIntoView({ behavior: "smooth" });
       section.style.marginTop = "0";
     }
 
@@ -27,32 +29,34 @@ const Menu = () => {
       <nav className="menu">
         <ul className="list">
           <li className="listItem">
-            <a
-              href="#"
+            <button className="link" onClick={() => scrollToSection("inicio")}>
+              Inicio
+            </button>
+          </li>
+          <li className="listItem">
+            <button
               className="link"
               onClick={() => scrollToSection("nosotros")}
             >
               Nosotros
-            </a>
+            </button>
           </li>
 
           <li className="listItem">
-            <a
-              href="#"
+            <button
               className="link"
               onClick={() => scrollToSection("catalogo")}
             >
               Catálogo
-            </a>
+            </button>
           </li>
           <li className="listItem">
-            <a
-              href="#"
+            <button
               className="link"
               onClick={() => scrollToSection("contacto")}
             >
               Contacto
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -102,9 +106,9 @@ const Navigation = styled.div`
     position: absolute;
     width: 32px;
     height: 2px;
-    background: #999;
+    background: var(--tertiary-color);
     transform: translateY(-10px);
-    box-shadow: 0 10px #999;
+    box-shadow: 0 10px var(--tertiary-color);
     transition: 0.5s;
   }
 
@@ -113,14 +117,14 @@ const Navigation = styled.div`
     position: absolute;
     width: 32px;
     height: 2px;
-    background: #999;
+    background: var(--tertiary-color);
     transform: translateY(10px);
     transition: 0.6s;
   }
 
   &.active .menuToggle::before {
     transform: translateY(0px) rotate(45deg);
-    box-shadow: 0 0 #999;
+    box-shadow: 0 0 var(--tertiary-color);
   }
   &.active .menuToggle::after {
     transform: translateY(0px) rotate(-45deg);
@@ -131,8 +135,8 @@ const Navigation = styled.div`
     width: 100%;
     height: calc(100% - 50px);
     margin-top: 50px;
-    border-top: 1px solid #999;
-    background-color: #999;
+    border-top: 1px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
   }
 
   .list {
@@ -155,5 +159,8 @@ const Navigation = styled.div`
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 `;

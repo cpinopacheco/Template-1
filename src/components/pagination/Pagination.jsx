@@ -57,7 +57,7 @@ const Container = styled.div`
   justify-content: center;
 
   .button {
-    background-color: #999;
+    background-color: var(--tertiary-color);
     color: var(--text-color);
     text-transform: uppercase;
     margin: 0.5rem;
@@ -70,7 +70,7 @@ const Container = styled.div`
 
   .button.active {
     transform: scale(1.1);
-    background-color: #333;
+    background-color: var(--secondary-color);
   }
 `;
 

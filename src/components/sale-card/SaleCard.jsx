@@ -47,7 +47,7 @@ export default SaleCard;
 
 const Container = styled.div`
   .card {
-    background-color: #333;
+    background-color: var(--secondary-color);
     border-radius: 0.5rem 2rem;
     box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
     padding: 1rem;
@@ -102,7 +102,7 @@ const Container = styled.div`
 
   .button {
     display: block;
-    background-color: #999;
+    background-color: var(--tertiary-color);
     border-radius: 0.5rem 2rem;
     color: var(--text-color);
     font-size: var(--subtitle-size);

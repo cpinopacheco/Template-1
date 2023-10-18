@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #e6e349;
+  --secondary-color: #333;
+  --tertiary-color: #999;
   --text-color: #fff;
   --title-size: 2.5rem;
   --title-size-lg: 3rem;

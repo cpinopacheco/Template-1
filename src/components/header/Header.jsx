@@ -4,7 +4,7 @@ import Menu from "../menu/Menu";
 
 const Header = () => {
   return (
-    <Container>
+    <Container id="inicio">
       <div className="container">
         <img src={logo} alt="logo" />
         <div className="content">
