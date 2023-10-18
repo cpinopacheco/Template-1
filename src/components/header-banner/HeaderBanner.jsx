@@ -3,7 +3,7 @@ import imageBanner from "./assets/image1.jpg";
 import imageBannerMobile from "./assets/image1Mobile.jpg";
 import MainButton from "../main-button/MainButton";
 
-const Banner = () => {
+const HeaderBanner = () => {
   return (
     <Container>
       <div className="banner">
@@ -23,7 +23,7 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeaderBanner;
 
 const Container = styled.div`
   .banner {
@@ -42,7 +42,7 @@ const Container = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 300px;
+    height: 250px;
     z-index: 1;
     background: linear-gradient(to top, #111, transparent);
   }

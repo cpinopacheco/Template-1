@@ -1,6 +1,6 @@
 import styled from "styled-components";
+import image from "./assets/image.jpg";
 import imageMobile from "./assets/imageMobile.jpg";
-import imageDesktop from "./assets/imageDesktop.jpg";
 
 const BannerOne = () => {
   return (
@@ -41,7 +41,7 @@ const Container = styled.div`
     background-size: cover;
 
     @media (min-width: 992px) {
-      background-image: url(${imageDesktop});
+      background-image: url(${image});
     }
   }
 
