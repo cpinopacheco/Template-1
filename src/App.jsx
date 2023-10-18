@@ -1,5 +1,5 @@
 import Banner from "./components/banner/Banner";
-import BannerTwo from "./components/bannerTwo/BannerTwo";
+import BannerTwo from "./components/banner-two/BannerTwo";
 import Header from "./components/header/Header";
 import SectionOne from "./components/sections/section-one/SectionOne.jsx";
 import SectionTwo from "./components/sections/section-two/SectionTwo";
