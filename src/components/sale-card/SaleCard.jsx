@@ -45,10 +45,6 @@ const SaleCard = ({ item }) => {
 
 export default SaleCard;
 
-SaleCard.propTypes = {
-  item: PropTypes.object,
-};
-
 const Container = styled.div`
   .card {
     background-color: #333;
@@ -128,3 +124,7 @@ const Container = styled.div`
       scale(1);
   }
 `;
+
+SaleCard.propTypes = {
+  item: PropTypes.object,
+};

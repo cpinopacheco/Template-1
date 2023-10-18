@@ -54,6 +54,118 @@ const Catalogue = [
     price: "9.990",
     category: ""
   },
+  {
+    id: "7",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "8",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "9",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "10",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "11",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "12",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "13",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "14",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "15",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "16",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "17",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "18",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "19",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
+  {
+    id: "20",
+    image: image6,
+    name: "Collar corazón",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates deserunt reiciendis nihil doloremque adipisci.",
+    price: "9.990",
+    category: ""
+  },
 ]
 
 export default Catalogue;
