@@ -11,7 +11,7 @@ const SectionTwo = () => {
   const [searchText, setSearchText] = useState("");
   const [totalItems, setTotalItems] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 6;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   // Filtrar el catálogo en función del texto de búsqueda
@@ -46,7 +46,7 @@ const SectionTwo = () => {
   };
 
   return (
-    <Section>
+    <Section id="catalogo">
       <h2 className="title">Catálogo</h2>
       <InputSearch handleSearch={setSearchText}></InputSearch>
       <p className="total-items">Total Productos: {totalItems}</p>

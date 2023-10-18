@@ -6,7 +6,7 @@ const SectionOne = () => {
   const { name } = MyCompany;
 
   return (
-    <Section>
+    <Section id="nosotros">
       <h2 className="title">Acerca de {name}</h2>
       <Card3d></Card3d>
     </Section>

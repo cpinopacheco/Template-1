@@ -4,33 +4,53 @@ import styled from "styled-components";
 const Menu = () => {
   const [isActive, setIsActive] = useState(false);
 
-  const handleClick = () => {
+  const menuToggle = () => {
+    setIsActive(!isActive);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const offset = 30;
+      section.style.marginTop = `-${offset}px`;
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.style.marginTop = "0";
+    }
+
     setIsActive(!isActive);
   };
 
   return (
     <Navigation className={isActive ? "active" : ""}>
-      <div className="menuToggle" onClick={handleClick}></div>
+      <div className="menuToggle" onClick={menuToggle}></div>
       <nav className="menu">
         <ul className="list">
           <li className="listItem">
-            <a href="#" className="link" onClick={handleClick}>
-              Inicio
-            </a>
-          </li>
-          <li className="listItem">
-            <a href="#" className="link" onClick={handleClick}>
+            <a
+              href="#"
+              className="link"
+              onClick={() => scrollToSection("nosotros")}
+            >
               Nosotros
             </a>
           </li>
 
           <li className="listItem">
-            <a href="#" className="link" onClick={handleClick}>
+            <a
+              href="#"
+              className="link"
+              onClick={() => scrollToSection("catalogo")}
+            >
               Catálogo
             </a>
           </li>
           <li className="listItem">
-            <a href="#" className="link" onClick={handleClick}>
+            <a
+              href="#"
+              className="link"
+              onClick={() => scrollToSection("contacto")}
+            >
               Contacto
             </a>
           </li>
