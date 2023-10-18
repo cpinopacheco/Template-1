@@ -20,7 +20,7 @@ export default Header;
 const Container = styled.header`
   width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
 
   .container {
     display: flex;
@@ -39,7 +39,7 @@ const Container = styled.header`
   .content {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0px;
     max-width: 1800px;

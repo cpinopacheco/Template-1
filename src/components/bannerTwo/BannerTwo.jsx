@@ -7,7 +7,9 @@ const BannerTwo = () => {
     <Container>
       <div className="banner">
         <div className="imgBg"></div>
-        <h2 className="title">Mensaje Importante</h2>
+        <div className="content">
+          <h2 className="title">Mensaje Importante</h2>
+        </div>
       </div>
     </Container>
   );
@@ -43,9 +45,14 @@ const Container = styled.div`
     }
   }
 
-  .title {
+  .content {
     position: absolute;
     text-align: center;
+    z-index: 2;
+    width: 80%;
+  }
+
+  .title {
     font-size: var(--title-size);
     color: var(--text-color);
   }

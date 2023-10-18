@@ -70,6 +70,8 @@ const Container = styled.div`
     position: relative;
     max-width: 80%;
     text-align: center;
+    margin-top: 100px;
+    z-index: 2;
 
     @media (min-width: 1400px) {
       max-width: 50%;
