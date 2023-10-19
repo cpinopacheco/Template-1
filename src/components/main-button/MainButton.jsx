@@ -1,66 +1,32 @@
 import styled from "styled-components";
 
 const MainButton = () => {
-  return (
-    <Button>
-      <span>Click</span>
-    </Button>
-  );
+  return <Button>call to action</Button>;
 };
 
 export default MainButton;
 
 const Button = styled.button`
   display: inline-block;
-  font-weight: 600;
-  width: 120px;
-  height: 40px;
-  margin: 1rem;
-  border-radius: 40px;
-  border: 1px solid var(--tertiary-color);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in;
-  z-index: 1;
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 0.5rem 2rem;
+  color: var(--text-color);
+  font-size: var(--subtitle-size);
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  margin: 1rem 0;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  backdrop-filter: blur(0.1rem);
+  text-align: center;
   text-transform: uppercase;
+  box-shadow: 0px 8px 12px #333;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 100%;
-    transform: skew(15deg);
-    transition: all 0.5s;
-    overflow: hidden;
-    z-index: -1;
-  }
-
-  &::before {
-    left: -9px;
-    background: var(--secondary-color);
-  }
-
-  &::after {
-    right: -9px;
-    background: var(--tertiary-color);
-  }
-
-  &:hover::before,
-  &:hover::after {
-    width: 58%;
-  }
-
-  &:hover span {
-    color: #fff;
-    transition: 0.3s;
-  }
-
-  & span {
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-    transition: all 0.3s ease-in;
+  &:hover {
+    transform: perspective(100px) translateX(10px) rotateX(0deg) rotateY(3deg)
+      scale(1);
   }
 `;

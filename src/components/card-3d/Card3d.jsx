@@ -8,13 +8,17 @@ const Card3d = () => {
         <div key={item.id} className="card">
           <div className="box">
             <div className="imgBx">
-              <img src={item.image} alt={`Imágen ${item.title}`} />
+              <img
+                src={item.image}
+                alt={`Imágen ${item.title}`}
+                className="image"
+              />
               <div className="seeMoreButton">Ver mas</div>
             </div>
             <div className="contentBx">
-              <div>
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
+              <div className="itemsContainer">
+                <h2 className="titleContent">{item.title}</h2>
+                <p className="subtitleContent">{item.description}</p>
               </div>
             </div>
           </div>
@@ -96,7 +100,7 @@ const Container = styled.div`
     height: 100%;
   }
 
-  .imgBx img {
+  .imgBx .image {
     position: absolute;
     top: 0;
     left: 0;
@@ -122,7 +126,7 @@ const Container = styled.div`
     transform: rotateY(180deg);
   }
 
-  .box .contentBx div {
+  .itemsContainer {
     transform-style: preserve-3d;
     padding: 20px;
     background: var(--tertiary-color);
@@ -130,15 +134,15 @@ const Container = styled.div`
     border-radius: 1rem;
   }
 
-  .contentBx div h2 {
+  .titleContent {
     color: #fff;
     font-size: 2rem;
     letter-spacing: 1px;
   }
 
-  .contentBx div p {
+  .subtitleContent {
     color: #fff;
-    text-align: center;
+    text-align: start;
     letter-spacing: 1px;
   }
 `;

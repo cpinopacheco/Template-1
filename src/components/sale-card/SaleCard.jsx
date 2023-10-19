@@ -85,7 +85,7 @@ const Container = styled.div`
   .iconWsp {
     width: 0.9rem;
     height: 0.9rem;
-    background-color: #67d348;
+    background-color: #00e676;
     color: #fff;
     padding: 0.25rem;
     border-radius: 50%;

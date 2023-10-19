@@ -90,7 +90,7 @@ const Catalogue = () => {
 export default Catalogue;
 
 const Section = styled.section`
-  margin: 6rem auto;
+  margin: 6rem 2rem;
 
   .cardsContainer {
     display: flex;
