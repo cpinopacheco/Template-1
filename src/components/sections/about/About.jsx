@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Card3d from "../../card-3d/Card3d";
 import MyCompany from "../../../data/MyCompany.js";
 
-const SectionOne = () => {
+const About = () => {
   const { name } = MyCompany;
 
   return (
@@ -13,7 +13,7 @@ const SectionOne = () => {
   );
 };
 
-export default SectionOne;
+export default About;
 
 const Section = styled.section`
   margin: 6rem 1rem;

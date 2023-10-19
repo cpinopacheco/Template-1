@@ -6,7 +6,7 @@ import Pagination from "../../pagination/Pagination.jsx";
 import catalogue from "../../../data/Catalogue.js";
 import styled from "styled-components";
 
-const SectionTwo = () => {
+const Catalogue = () => {
   const cardsContainerRef = useRef(null);
   const [searchText, setSearchText] = useState("");
   const [totalItems, setTotalItems] = useState(0);
@@ -87,7 +87,7 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default Catalogue;
 
 const Section = styled.section`
   margin: 6rem auto;

@@ -1,19 +1,21 @@
 import Header from "./components/header/Header";
 import HeaderBanner from "./components/header-banner/HeaderBanner";
-import SectionOne from "./components/sections/section-one/SectionOne.jsx";
+import About from "./components/sections/about/About";
 import BannerOne from "./components/banner-one/BannerOne";
-import SectionTwo from "./components/sections/section-two/SectionTwo";
+import Catalogue from "./components/sections/catalogue/Catalogue";
 import BannerTwo from "./components/banner-two/BannerTwo";
+import Contact from "./components/sections/contact/Contact";
 
 function App() {
   return (
     <>
       <Header />
       <HeaderBanner />
-      <SectionOne />
+      <About />
       <BannerOne />
-      <SectionTwo />
+      <Catalogue />
       <BannerTwo />
+      <Contact />
     </>
   );
 }
